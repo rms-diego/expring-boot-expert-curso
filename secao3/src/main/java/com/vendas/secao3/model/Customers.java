@@ -1,7 +1,5 @@
 package com.vendas.secao3.model;
 
-import java.math.BigDecimal;
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -16,12 +14,10 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class OrdersProducts {
+public class Customers {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Integer id;
-  private Integer orderId;
-  private Integer productId;
-  private BigDecimal amount;
 
+  private String name;
 }
