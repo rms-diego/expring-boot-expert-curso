@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/")
-public class VendasController {
+public class SellController {
 
   @Autowired
   @Qualifier("applicationName")
